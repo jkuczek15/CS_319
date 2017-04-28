@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="Connect4.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<title>Welcome to Connect 4</title>
+<h1 style='text-align: center;'>Connect 4</h1>
+<center>
+<form id="connect4form" onsubmit="return Game.create_table()">
+<p>Default board is 6x7. There is undefined behavior when large boards are created.</p>
+<table>
+  <tr>
+    <td id=0><label for="rows">Rows: </label></td>
+    <td id=1><input  size=2 id="rows" type="text" value="6"></td>
+  </tr>
+  <tr>
+    <td id=2><label for="columns">Columns: </label></td>
+    <td id=3><input size=2 id="columns" type="text" value="7"></td>
+  </tr>
+  <tr>
+    <td id=4 colspan=2><center><input type="submit" value="Submit"></center></td>
+  </tr>
+</table>
+</form>
+</center>
+<p id="game_content"></p>
+<p id="game_space"></p>
+<script src="Connect4.js"></script>
